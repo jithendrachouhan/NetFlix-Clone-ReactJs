@@ -6,6 +6,7 @@ export const TMBD_POPULAR_URL = 'https://api.themoviedb.org/3/movie/popular?lang
 export const TMBD_TOP_RATED_URL = 'https://api.themoviedb.org/3/movie/top_rated?language=en-US&page=1';
 export const TMBD_UP_COMING_URL = 'https://api.themoviedb.org/3/movie/upcoming?language=en-US&page=1';
 export const TMDB_IMAGES_CDN = 'https://image.tmdb.org/t/p/w780/'
+export const TMDB_MOVIE_SEARCH = 'https://api.themoviedb.org/3/search/movie?';
 
 
 ////Apidata

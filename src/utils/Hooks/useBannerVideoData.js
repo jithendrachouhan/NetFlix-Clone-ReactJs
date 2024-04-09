@@ -19,7 +19,6 @@ const useBannerVideoData = (id) => {
         
         const movieVideoData = json?.results.filter((data)=> {return data.name === 'Official Trailer'})
         const bannerData = movieVideoData.length >= 1? movieVideoData[0]: json?.results[0]
-        console.log("dwadaw", bannerData)
         dispatch(addBannerMovie(bannerData))
     }
 

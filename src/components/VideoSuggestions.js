@@ -9,7 +9,7 @@ const VideoSuggestions = () => {
 
 
     return (
-        <div className='ml-16 -mt-80 z-20'>
+        <div>
             {playingNow && <MovieList title='Playing Now' movies={playingNow}/>}
             {topRated && <MovieList title='Top Rated' movies={topRated}/>}
             {upcoming && <MovieList title='Up Coming' movies={upcoming}/>}
