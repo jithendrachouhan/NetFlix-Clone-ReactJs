@@ -27,14 +27,14 @@ const SearchPage = () => {
 
     return (
     <div>
-        <div className='bg-black fixed'> 
-            <div className='opacity-50 z-0'>
-                <img  src={AUTH_BG_IMG} alt="BG"></img>
+        <div className='bg-black fixed h-[100%]'> 
+            <div className='opacity-50 z-0 h-[100%]'>
+                <img className='h-[100%] md:h-auto object-cover' src={AUTH_BG_IMG} alt="BG"></img>
             </div>
         </div>
 
-        <div className='absolute top-[20%] w-[100%]'>
-            <form className=' mx-auto bg-black w-[40%] grid grid-cols-12' onSubmit={(e) => e.preventDefault()}>
+        <div className='absolute top-[15%] w-[100%] md:top-[20%]'>
+            <form className=' mx-auto bg-black w-[80%] grid grid-cols-12 md:w-[40%]' onSubmit={(e) => e.preventDefault()}>
                 <input ref={inputData} className='bg-gray-900 py-2 px-5 m-2 col-span-9 ' type='text' placeholder="What's on your mind"/>
                 <button className='bg-red-600 py-2 px-5 m-2 col-span-3' onClick={HandleSearchButtonClick}>Search</button>
             </form>

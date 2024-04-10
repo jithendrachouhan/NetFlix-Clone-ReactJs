@@ -76,11 +76,11 @@ const handleUpdateProfile = () => {
 }
 
   return (
-    <div className='bg-black z-10'>
-      <div className='opacity-50 z-0'>
-        <img  src={AUTH_BG_IMG} alt="BG"></img>
+    <div className= 'fixed bg-black z-1 h-[100%]'>
+      <div className=' opacity-50 z-0 h-[100%]'>
+        <img className='h-[100%]  object-cover md:h-auto' src={AUTH_BG_IMG} alt="BG"></img>
       </div>
-      <div className='absolute w-[25%]  bg-black top-[50%] left-[50%] transform translate-x-[-50%] translate-y-[-50%] bg-opacity-80 grid gap-4 px-10 py-16'>
+      <div className='absolute w-[80%]  sm:w-[70%] md:w-[70%] lg:w-[30%] bg-black top-[50%] left-[50%] transform translate-x-[-50%] translate-y-[-50%] bg-opacity-80 grid gap-4 px-10 py-16'>
         <h1 className='text-3xl font-bold'>{isSignIn?"Sign In":"Sign Up"}</h1>
         <form className='grid gap-4' onSubmit={(e) => {e.preventDefault()}}>
           {!isSignIn && <input className='w-[100%]  rounded-lg p-3 border border-gray-400 bg-gray-800' type='text' placeholder='Name' ref={name}/>}
@@ -92,8 +92,7 @@ const handleUpdateProfile = () => {
         <p className='text-red-600 font-bold'>{errorMessage}</p>
         <p>{isSignIn?"New to Netflix?":"Already have an account"} <span className='font-bold cursor-pointer' onClick={HandleAuthSwitch} >{isSignIn?"Sign up now.":"Sign In now"}</span></p>
       </div>
-    </div>
-    
+    </div> 
   )
 }
 

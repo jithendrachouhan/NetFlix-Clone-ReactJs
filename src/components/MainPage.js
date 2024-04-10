@@ -23,26 +23,14 @@ const MainPage = () => {
   return (  
 
     isSearchActive? <SearchPage/>:
-
-    
-
-    <div className=' bg-black'>
+    <div className='bg-black'>
       {isTrailerPlaying && <TrailerPlayer/>}
-      <div className='w-[100%]'>
+      <div className='w-[100%] -z-10'>
         <BannerScreen />
       </div>
-      <div className='ml-16 -mt-96  z-20'>
+      <div className='ml-5 md:ml-16 z-20 md:-mt-96'>
         <VideoSuggestions/>
       </div>
-
-
-      <div className='fixed w-[100%] h-[100%] flex justify-center items-center bg-opacity-90 bg-black z-50'>
-            <div className='relative w-[60%] h-96 bg-blue-700'>
-            </div>
-        </div>
-
-      
-      
     </div>
   )
     

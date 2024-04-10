@@ -15,7 +15,7 @@ const MovieCard = ({movie}) => {
 
   if(!movie.poster_path) return null
   return (
-    <div className='w-48 mr-5' onClick={HandlePosterClick} >
+    <div className='w-28 mr-5 md:w-48' onClick={HandlePosterClick} >
         <img  alt='poster' src={TMDB_IMAGES_CDN + movie.poster_path} />
     </div>
   )
